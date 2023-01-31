@@ -17,6 +17,7 @@ const Projects = () => {
             github:"https://github.com/CodySaal/note_taker",
             imgUrl:noteScreenshot,
             link: "https://saal-note-taker.herokuapp.com/",
+            alt: "Note Taker Screenshot",
         },
     ];
 
@@ -25,6 +26,7 @@ const Projects = () => {
             title:"Social Network API",
             github:"https://github.com/CodySaal/social_network_api",
             imgUrl:socialScreenshot,
+            alt: "Social Network Screenshot",
         },
     ];
 
@@ -34,24 +36,28 @@ const Projects = () => {
             github: "https://github.com/CodySaal/pwa_text-editor",
             imgUrl:jateScreenshot,
             link: "https://dry-island-47595.herokuapp.com/",
+            alt: "J.A.T.E. Screenshot",
         },
         {
             title:"Tech Blog",
             github:"https://github.com/CodySaal/tech_blog",
             imgUrl:techScreenshot,
             link: "https://lit-savannah-08132.herokuapp.com/",
+            alt: "Tech Blog Screenshot",
         },
         {
             title:"College Football Pickem",
             github:"https://github.com/Hunter-Mayer/college-football-pickem",
             imgUrl:cfb,
             link: "https://safe-sands-42348.herokuapp.com/",
+            alt: "College Football Pickem Screenshot",
         },
         {
             title:"Github Repo Search",
             github:"https://github.com/CodySaal/github_repo_search",
             imgUrl:githubSearch,
             link: "https://codysaal.github.io/github_repo_search/",
+            alt: "Repo Search Screenshot",
         },
     ]
 

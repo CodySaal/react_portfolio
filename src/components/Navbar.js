@@ -30,7 +30,7 @@ function NavBar() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="#aboutme" className={activeLink === "aboutme" ? "active navbar-link": "navbar-link"} onClick={() => ontimeupdateActiveLink("aboutme")}>About Me</Nav.Link>
-                        <Nav.Link href="#Portfolio" className={activeLink === "Portfolio" ? "active navbar-link": "navbar-link"} onClick={() => ontimeupdateActiveLink("Portfolio")}>Portfolio</Nav.Link>
+                        <Nav.Link href="#Projects" className={activeLink === "Portfolio" ? "active navbar-link": "navbar-link"} onClick={() => ontimeupdateActiveLink("Portfolio")}>Portfolio</Nav.Link>
                         <Nav.Link href="#Contact" className={activeLink === "Contact" ? "active navbar-link": "navbar-link"} onClick={() => ontimeupdateActiveLink("Contact")}>Contact</Nav.Link>
                         <Nav.Link href="#Resume" className={activeLink === "Resume" ? "active navbar-link": "navbar-link"} onClick={() => ontimeupdateActiveLink("Resume")}>Resume</Nav.Link>
                     </Nav>

@@ -11,7 +11,24 @@ import techScreenshot from "../assets/images/tech_blog_screenshot.png"
 
 const Projects = () => {
 
-    const projects = [
+    const frontEnd = [
+        {
+            title:"Note Taker",
+            github:"https://github.com/CodySaal/note_taker",
+            imgUrl:noteScreenshot,
+            link: "https://saal-note-taker.herokuapp.com/",
+        },
+    ];
+
+    const backEnd = [
+        {
+            title:"Social Network API",
+            github:"https://github.com/CodySaal/social_network_api",
+            imgUrl:socialScreenshot,
+        },
+    ];
+
+    const fullStack = [
         {
             title: "J.A.T.E." ,
             github: "https://github.com/CodySaal/pwa_text-editor",
@@ -25,12 +42,6 @@ const Projects = () => {
             link: "https://lit-savannah-08132.herokuapp.com/",
         },
         {
-            title:"Note Taker",
-            github:"https://github.com/CodySaal/note_taker",
-            imgUrl:noteScreenshot,
-            link: "https://saal-note-taker.herokuapp.com/",
-        },
-        {
             title:"College Football Pickem",
             github:"https://github.com/Hunter-Mayer/college-football-pickem",
             imgUrl:cfb,
@@ -41,11 +52,6 @@ const Projects = () => {
             github:"https://github.com/CodySaal/github_repo_search",
             imgUrl:githubSearch,
             link: "https://codysaal.github.io/github_repo_search/",
-        },
-        {
-            title:"Social Network API",
-            github:"https://github.com/CodySaal/social_network_api",
-            imgUrl:socialScreenshot,
         },
     ]
 
@@ -62,20 +68,20 @@ const Projects = () => {
                             <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Front-End</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Back-End</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Full Stack</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          frontEnd.map((project, index) => {
                             return (
                               <Project
                                 key={index}
@@ -86,11 +92,33 @@ const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                    <Row>
+                        {
+                          backEnd.map((project, index) => {
+                            return (
+                              <Project
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Row>
+                        {
+                          fullStack.map((project, index) => {
+                            return (
+                              <Project
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

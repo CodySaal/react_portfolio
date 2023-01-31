@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import { ArrowRightCircle } from "react-bootstrap-icons"
 import "animate.css"
 import TrackVisibility from "react-on-screen"
+import headshot from "../assets/images/headshot.jpeg"
 
 
 const About = (() => {
@@ -66,6 +67,7 @@ const About = (() => {
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate_animated animate_zoomIn" : ""}>
+                                    <img src={headshot} alt="headshot img" />
                                 </div>
                             }
                         </TrackVisibility>

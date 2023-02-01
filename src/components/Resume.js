@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap"
+import resume from "../assets/images/resume_screenshot.png"
 
 const Resume = (() => {
 
@@ -16,6 +17,8 @@ const Resume = (() => {
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                                 <div>
+                                    <img src={resume} alt="Resume Screenshot" id="resumeScreenshot"/>
+                                    <p>Download my <a href="./cody_saal_resume.pdf" download="cody_saal_resume">resume</a></p>
                                 </div>
                     </Col>
                 </Row>

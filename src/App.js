@@ -5,16 +5,19 @@ import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter basename="/">
       <Header />
-      <About />
-      <Projects />
-      <Contact />
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/Portfolio" element={<Projects />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

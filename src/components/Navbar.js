@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container } from "react-bootstrap"
 import { useEffect, useState } from "react"
+import { NavLink } from "react-router-dom"
 
 function NavBar() {
     const [activeLink, setActiveLink] = useState("aboutme")
@@ -25,14 +26,14 @@ function NavBar() {
     return (
         <Navbar  expand="lg" className={scrolled ? "scrolled": ""}>
             <Container>
-                <Navbar.Brand href="#aboutme">Cody Saal</Navbar.Brand>
+                <Navbar.Brand href="/">Cody Saal</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#home" className={activeLink === "aboutme" ? "active navbar-link": "navbar-link"} onClick={() => ontimeupdateActiveLink("aboutme")}>About Me</Nav.Link>
-                        <Nav.Link href="#project" className={activeLink === "Portfolio" ? "active navbar-link": "navbar-link"} onClick={() => ontimeupdateActiveLink("Portfolio")}>Portfolio</Nav.Link>
-                        <Nav.Link href="#Contact" className={activeLink === "Contact" ? "active navbar-link": "navbar-link"} onClick={() => ontimeupdateActiveLink("Contact")}>Contact</Nav.Link>
-                        <Nav.Link href="#Resume" className={activeLink === "Resume" ? "active navbar-link": "navbar-link"} onClick={() => ontimeupdateActiveLink("Resume")}>Resume</Nav.Link>
+                        <NavLink to="/" className={activeLink === "About Me" ? "active navbar-link": "navbar-link"} onClick={() => ontimeupdateActiveLink("About Me")}>About Me</NavLink>
+                        <NavLink to="/Portfolio" className={activeLink === "Portfolio" ? "active navbar-link": "navbar-link"} onClick={() => ontimeupdateActiveLink("Portfolio")}>Portfolio</NavLink>
+                        <NavLink to="/Contact" className={activeLink === "Contact" ? "active navbar-link": "navbar-link"} onClick={() => ontimeupdateActiveLink("Contact")}>Contact</NavLink>
+                        <NavLink to="/Resume" className={activeLink === "Resume" ? "active navbar-link": "navbar-link"} onClick={() => ontimeupdateActiveLink("Resume")}>Resume</NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

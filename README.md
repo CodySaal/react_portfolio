@@ -2,7 +2,7 @@
 
 ## Description
 
-The purpose of this project was to practice using React. Building the project gave me the opportunity to work with IndexDB and webpack. This projects has both a front and back end so I was able to deploy it using Heroku. This gave me more experience with using Heroku to deploy live applications. The application itself can be used as any other text editor. It can even be downloaded to the device and used offline.
+The purpose of this project was to practice using React. Building the project gave me the opportunity to work on making reusable componenets and working with state. This projects has only a front end so I was able to deploy it using Github Pages. This gave me more experience with using the gh-pages npm package. The application itself will be used to store all of my projects that I make so that future employers can see my ability.
 
 ## Table of Contents
 
@@ -22,26 +22,24 @@ To invoke the application the user can run
 ```
 npm start
 ```
-If the user wants to run in a dev environment so the server refreshes after changes are made the user should run
-```
-npm run start:dev
-```
 
 ## Usage
 
-The applications usage is fairly typical to other text editors. This one, being a PWA, can be installed on the users device and runs similar to a native app. This will also allow the user to use J.A.T.E while being offline. All text is saved once the user clicks off of the editor.
+This website is a portfolio for future employers to look at in order to see my skills and abilities.
 
 
-![Screenshot](assets/jatescreenshot.png)
+![Screenshot](assets/portfolio_screenshot.png)
 
 
-[J.A.T.E](https://dry-island-47595.herokuapp.com/ "Deployed Text Editor")
+[Portfolio](https://codysaal.github.io/react_portfolio "Deployed Portfolio")
 
 ## Credits
 
 [README Template](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide 'Professional README Guide')
 
-[Heroku Deployment](https://www.educba.com/dataset-javascript/ "Heroku Deployment Tutorial")
+[Github Pages Deployment](https://create-react-app.dev/docs/deployment/ "Github Deployment Tutorial")
+
+[WebDecoded Tutorial](https://www.youtube.com/watch?v=hYv6BM2fWd8&list=PLvbEHp7_5eirFhb3mdKZ62YGuL3L-GoNI&index=5&t=7s "webdecoded tutorial")
 
 ## License
 

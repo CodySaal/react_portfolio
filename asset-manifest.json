@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react_portfolio/static/css/main.23572fd1.css",
+    "main.js": "/react_portfolio/static/js/main.59a40490.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react_portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/resume_screenshot.png": "/react_portfolio/static/media/resume_screenshot.d5f3fee77a693aefdec6.png",
+    "static/media/cfb_scoreboard.png": "/react_portfolio/static/media/cfb_scoreboard.c769642f08b36566b8a2.png",
+    "static/media/social_network_api.png": "/react_portfolio/static/media/social_network_api.e0d87680af77ae1ac062.png",
+    "static/media/tech_blog_screenshot.png": "/react_portfolio/static/media/tech_blog_screenshot.3c5c47de1c178853ccd1.png",
+    "static/media/headshot.jpeg": "/react_portfolio/static/media/headshot.2c816c724bed31577d50.jpeg",
+    "static/media/note_taker_screenshot.png": "/react_portfolio/static/media/note_taker_screenshot.1431401d4fab2dfa5526.png",
+    "static/media/github_search.png": "/react_portfolio/static/media/github_search.4ba935cd335a27ca3cd2.png",
+    "static/media/jatescreenshot.png": "/react_portfolio/static/media/jatescreenshot.307bce20f6c4917b9ced.png",
+    "index.html": "/react_portfolio/index.html",
+    "main.23572fd1.css.map": "/react_portfolio/static/css/main.23572fd1.css.map",
+    "main.59a40490.js.map": "/react_portfolio/static/js/main.59a40490.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react_portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23572fd1.css",
+    "static/js/main.59a40490.js"
+  ]
+}

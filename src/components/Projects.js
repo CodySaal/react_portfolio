@@ -8,6 +8,7 @@ import jateScreenshot from "../assets/images/jatescreenshot.png"
 import noteScreenshot from "../assets/images/note_taker_screenshot.png"
 import socialScreenshot from "../assets/images/social_network_api.png"
 import techScreenshot from "../assets/images/tech_blog_screenshot.png"
+import handmeupsScreenshot from "../assets/images/handmeups.png"
 
 const Projects = () => {
 
@@ -59,6 +60,13 @@ const Projects = () => {
       link: "https://codysaal.github.io/github_repo_search/",
       alt: "Repo Search Screenshot",
     },
+    {
+      title: "Hand Me Ups",
+      github: "https://github.com/pbp66/hand-me-ups",
+      imgUrl: handmeupsScreenshot,
+      link: "https://hand-me-ups-v2.herokuapp.com/",
+      alt: "Ecommerce Site"
+    }
   ]
 
   return (

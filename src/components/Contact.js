@@ -52,7 +52,7 @@ function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setButtonText("Sending...");
-        let response = await fetch(`${process.env.URL}/${process.env.PORT}/contact`, {
+        let response = await fetch("/contact", {
             method: "POST",
             headers: {
                 "Content-type": "Application/json;charset=utf-8",

@@ -9,6 +9,7 @@ import noteScreenshot from "../assets/images/note_taker_screenshot.png"
 import socialScreenshot from "../assets/images/social_network_api.png"
 import techScreenshot from "../assets/images/tech_blog_screenshot.png"
 import handmeupsScreenshot from "../assets/images/handmeups.png"
+import bookSearch from "../assets/images/booksearch.png"
 
 const Projects = () => {
 
@@ -59,6 +60,13 @@ const Projects = () => {
       imgUrl: githubSearch,
       link: "https://codysaal.github.io/github_repo_search/",
       alt: "Repo Search Screenshot",
+    },
+    {
+      title:"Google Book Search",
+      github: "https://github.com/CodySaal/book_search_engine",
+      imgUrl: bookSearch,
+      link: "https://shielded-forest-16261.herokuapp.com/",
+      alt: "Google Book Search"
     },
     {
       title: "Hand Me Ups",
